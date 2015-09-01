@@ -29,10 +29,64 @@ hr.light {
     border-color: #fff;
 }
 
+hr.fine{
+    margin: 30px;
+    max-width:none;
+    border-color: #fff;
+    border-width: 1px;
+}
+
 .marchio {
     color: #f05f40;
     font-weight: 700;
     font-size: 25px;
+}
+
+.gallery h2 {
+    font-family: home;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.carouselprodotti {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.desc {
+    color: #000;
+    font-family: home;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.descmarchio {
+    padding-top: 10px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(white, transparent);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(white, transparent);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(white, transparent);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(white, transparent);
+    /* Standard syntax */
+}
+
+.descscarpe{
+    color: #DF2;
 }
 
 a {
@@ -64,8 +118,12 @@ p {
     line-height: 1.5;
 }
 
+.sfondo {
+    background-image: url(../img/ondepattern2.png);
+}
+
 .bg-primary {
-    background-color: #f05f40;
+    background-color: #aa5f40;
 }
 
 .bg-dark {
@@ -93,6 +151,36 @@ aside {
     height: 50px;
     margin-top: -15px;
     margin-left: -15px;
+}
+
+.gallery-title {
+    text-transform: uppercase;
+    font-family: home;
+    font-size: 25px;
+    color: #eee;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50px;
+    right: 20%;
+    font-family: home;
+    font-size: 20px;
+    bottom: auto;
+    left: 5%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none
 }
 
 #map-canvas {
@@ -200,6 +288,14 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    /*   background-image: -webkit-linear-gradient(bottom, white, transparent);
+    /* For Safari 5.1 to 6.0 */
+    /* background-image: -o-linear-gradient(bottom, white, transparent);
+    /* For Opera 11.1 to 12.0 */
+    /* background-image: -moz-linear-gradient(bottom, white, transparent);
+    /* For Firefox 3.6 to 15 */
+    /*  background-image: linear-gradient(to top, white, transparent);
+    /* Standard syntax */
 }
 
 header .header-content {
@@ -207,6 +303,10 @@ header .header-content {
     width: 100%;
     padding: 100px 15px;
     text-align: center;
+}
+
+header .header-content .header-content-inner {
+    margin-top: 0px;
 }
 
 header .header-content .header-content-inner h1 {
@@ -217,6 +317,10 @@ header .header-content .header-content-inner h1 {
     font-family: home;
 }
 
+header .header-content .header-content-inner small {
+    color: bisque;
+}
+
 header .header-content .header-content-inner hr {
     margin: 30px auto;
 }
@@ -224,8 +328,8 @@ header .header-content .header-content-inner hr {
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
-    font-weight: 300;
-    color: rgba(255, 255, 255, .85);
+    font-weight: 600;
+    color: rgba(50, 50, 50, .85);
 }
 
 @media(min-width:768px) {
@@ -260,6 +364,14 @@ header .header-content .header-content-inner p {
 .service-box {
     margin: 50px auto 0;
     max-width: 400px;
+}
+
+.service-box-products {
+    margin: 50px auto 0;
+    max-width: 400px;
+    background-color: rgba(200, 200, 200, .8);
+    border-radius: 30px;
+    font-family: home;
 }
 
 @media(min-width:992px) {
