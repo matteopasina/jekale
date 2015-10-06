@@ -19,6 +19,21 @@ body {
     src: url(../fonts/Generica.otf);
 }
 
+@font-face {
+    font-family: cit;
+    src: url(../fonts/HoneyScript-Light.ttf);
+}
+
+@font-face {
+    font-family: firma;
+    src: url(../fonts/HoneyScript-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: fabrics;
+    src: url(../fonts/FabricsLight.ttf);
+}
+
 hr {
     max-width: 50px;
     border-color: #f05f40;
@@ -29,11 +44,35 @@ hr.light {
     border-color: #fff;
 }
 
-hr.fine{
+hr.fine {
     margin: 30px;
-    max-width:none;
+    max-width: none;
     border-color: #fff;
     border-width: 1px;
+}
+
+.frase {
+    display: inline-block;
+}
+
+.cit {
+    margin-left: 120px;
+    margin-right: 120px;
+    font-family: cit;
+    font-size: 50px;
+}
+
+.quoteclose {
+    position: absolute;
+    right: 200px;
+    margin-top: -70px;
+}
+
+.firma {
+    font-family: firma;
+    font-size: 60px;
+    text-align: right;
+    margin-right: 250px;
 }
 
 .marchio {
@@ -51,10 +90,14 @@ hr.fine{
     height: 100%;
 }
 
+#carousel {
+    margin-bottom: -100px;
+}
+
 .carouselprodotti {
     width: 600px;
     height: 600px;
-    margin: auto;
+    height: 600px;
 }
 
 .carousel-inner > .item > img {
@@ -67,25 +110,34 @@ hr.fine{
     font-size: 25px;
     margin-top: 15px;
     margin-bottom: 100px;
+    text-align: left;
 }
 
 .descmarchio {
     padding-top: 10px;
+    padding-left: 50px;
     border-radius: 10px;
-    background: -webkit-linear-gradient(white, transparent);
+    background: -webkit-linear-gradient(left, white, transparent);
     /* For Safari 5.1 to 6.0 */
     
-    background: -o-linear-gradient(white, transparent);
+    background: -o-linear-gradient(left, white, transparent);
     /* For Opera 11.1 to 12.0 */
     
-    background: -moz-linear-gradient(white, transparent);
+    background: -moz-linear-gradient(left, white, transparent);
     /* For Firefox 3.6 to 15 */
     
-    background: linear-gradient(white, transparent);
+    background: linear-gradient(to right, white, transparent);
     /* Standard syntax */
 }
 
-.descscarpe{
+.descmarchio > h2 {
+    color: #f05f40;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: fabrics;
+}
+
+.descscarpe {
     color: #DF2;
 }
 
@@ -109,7 +161,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: home;
 }
 
 p {
@@ -157,36 +209,51 @@ aside {
     text-transform: uppercase;
     font-family: home;
     font-size: 25px;
-    color: #eee;
+    color: #f05f40;
     margin-right: 10px;
     margin-top: 5px;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, .6);
 }
 
 .carousel-caption {
     position: absolute;
-    top: 50px;
-    right: 20%;
+    top: 350px;
     font-family: home;
     font-size: 20px;
     bottom: auto;
     left: 5%;
+    right: 5%;
     z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     color: #000;
     text-align: left;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
 
-.carousel-control.left,
-.carousel-control.right {
-    background-image: none
+@media(min-width:768px) {
+    #map-canvas {
+        display: block;
+        height: 500px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .mobilemap {
+        display: none;
+    }
 }
 
-#map-canvas {
-    height: 500px;
-    margin: 0px;
-    padding: 0px;
+@media(max-width:767px) {
+    #map-canvas {
+        display: none;
+        height: 500px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .mobilemap {
+        font-size: 15px;
+        display: block;
+        text-align: center;
+    }
 }
 
 .navbar-default {
@@ -315,6 +382,7 @@ header .header-content .header-content-inner h1 {
     text-transform: uppercase;
     font-weight: 700;
     font-family: home;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
 
 header .header-content .header-content-inner small {
@@ -327,9 +395,10 @@ header .header-content .header-content-inner hr {
 
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgba(50, 50, 50, .85);
+    font-size: 22px;
+    font-weight: bold;
+    color: #111;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
 
 @media(min-width:768px) {
@@ -353,7 +422,6 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
     }
 }
 
