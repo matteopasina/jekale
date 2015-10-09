@@ -1,9 +1,0 @@
-.titolo{
-    margin-top: 100px;
-    font-size: 70px;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, .6);
-}
-
-.carouselprodotti > .carousel-inner> .item>.img{
-    margin: 0;
-}
