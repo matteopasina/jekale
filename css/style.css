@@ -470,6 +470,8 @@ header .header-content .header-content-inner p {
 }
 
 .service-box {
+    padding-top: 40px;
+    height: 450px;
     margin: 50px auto 0;
     max-width: 400px;
     padding-left: 30px;
@@ -506,6 +508,8 @@ header .header-content .header-content-inner p {
 }
 
 .service-boxLD {
+    padding-top: 40px;
+    height: 450px;
     margin: 50px auto 0;
     max-width: 400px;
     padding-left: 30px;
