@@ -1,3 +1,77 @@
+.navbar-default .navbar-header .navbar-brand {
+    font-size: 15px;
+}
+
+header .header-content .header-content-inner p{
+    font-size: 15px;
+}
+
 .descmarchio {
     margin-top: 80px;
+    padding: 0px;
+}
+
+.frase {
+    display: inline-block;
+    background-color: #FFF;
+    border-radius: 40px;
+    background: -webkit-radial-gradient(white 1%, transparent 70%, transparent 10%);
+    /* Safari 5.1 to 6.0 */
+    
+    background: -o-radial-gradient(white 1%, transparent 70%, transparent 10%);
+    /* For Opera 11.6 to 12.0 */
+    
+    background: -moz-radial-gradient(white 1%, transparent 70%, transparent 10%);
+    /* For Firefox 3.6 to 15 */
+    
+    background: radial-gradient(white 1%, transparent 70%, transparent 10%);
+    /* Standard syntax */
+}
+
+.cit {
+    font-family: cit;
+    font-size: 30px;
+    margin: 0;
+}
+
+.quoteclose {
+    position: absolute;
+    right: 100px;
+    margin-top: -20px;
+}
+
+.frase>div>img {
+    height: 30px;
+    width: 30px;
+}
+
+.firma {
+    font-family: firma;
+    font-size: 60px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.elencowebsites {
+    padding-left: 0px;
+    margin-top: 50px;
+    font-family: home;
+    font-size: 17px;
+    font-weight: 700;
+    list-style-type: none;
+    text-align: left;
+}
+
+.elencowebsites > li > a {
+    margin: 25px;
+}
+
+.carouselprodotti{
+    width: 100%;
+    height: auto;
+}
+
+.titolo-marchio{
+    font-size: 30px;
+    text-align: left;
 }

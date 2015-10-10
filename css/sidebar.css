@@ -1,0 +1,94 @@
+@media(min-width:768px) {
+    .sidebar {
+        position: fixed;
+        background-color: #fff;
+        width: 15%;
+        margin-top: 65px;
+        right: 0px;
+        box-shadow: 0px 0px 3px #ccc;
+        text-transform: uppercase;
+        font-family: home;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #f05f40;
+        border-radius: 0px;
+        text-align: left;
+        overflow: visible;
+        z-index: 999;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .sidebar h4 {
+        margin-top: 20px;
+        margin-left: 20px;
+        color: #fff;
+    }
+    .sidebar hr {
+        border-color: #ccc;
+        border-width: 1px;
+    }
+    .sidebar>a>div:hover,
+    .sidebar>a>div:focus {
+        box-shadow: 5px 1px 10px rgba(240, 95, 64, .6);
+        transition-duration: .4s;
+    }
+    .sidebar>a>div {
+        height: 50px;
+        text-align: center;
+    }
+    .sidebar>a>div>p {
+        padding-top: 10px;
+    }
+    .sidebar>a>div>img {
+        height: 50px;
+    }
+}
+
+@media(max-width:768px) {
+    .sidebar {
+        position: static;
+        display: inline-block;
+        background-color: #fff;
+        width: 100%;
+        margin-top: 50px;
+        text-transform: uppercase;
+        font-family: home;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #f05f40;
+        border-radius: 0px;
+        text-align: left;
+        overflow: visible;
+        z-index: 999;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: none;
+    }
+    .sidebar h4 {
+        margin-top: 20px;
+        margin-left: 20px;
+        color: #fff;
+    }
+    .sidebar hr {
+        border-color: #ccc;
+        border-width: 1px;
+        display: none;
+    }
+    .sidebar>a>div:hover,
+    .sidebar>a>div:focus {
+        box-shadow: 5px 1px 10px rgba(240, 95, 64, .6);
+        transition-duration: .4s;
+    }
+    .sidebar>a>div {
+        height: 50px;
+        width: 49%;
+        text-align: center;
+        display: inline-block;
+    }
+    .sidebar>a>div>p {
+        padding-top: 10px;
+    }
+    .sidebar>a>div>img {
+        height: 50px;
+    }
+}

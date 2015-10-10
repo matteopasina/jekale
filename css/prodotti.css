@@ -7,8 +7,8 @@
     color: #f05f40;
 }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
     color: #f05f40;
     background-color: #fff;
 }
@@ -73,6 +73,7 @@
     overflow: auto;
     border-bottom: 1px solid;
     border-bottom-color: #ccc;
+    padding-bottom: 20px;
 }
 
 .titolo-marchio {
@@ -83,4 +84,26 @@
     margin-right: 10px;
     margin-top: 5px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.titolo-marchio-work {
+    text-transform: uppercase;
+    font-family: home;
+    color: rgba(30, 30, 30, .8);
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 35px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+hr.fine {
+    margin: 30px;
+    max-width: none;
+    border-color: #ccc;
+    border-width: 1px;
+}
+
+#contatti {
+    margin-top: 100px;
+    border: 1px solid #ccc;
 }
